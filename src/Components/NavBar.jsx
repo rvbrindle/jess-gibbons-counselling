@@ -28,6 +28,7 @@ export default function NavBar({items}) {
     };
 
     const pageScroll = () => {
+        // eslint-disable-next-line no-restricted-globals
         setScrollPosition(scrollPosition = scrollY);
     }
 
