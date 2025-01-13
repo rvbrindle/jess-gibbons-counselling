@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2157837-f92e-4247-878f-753c5ae8f53b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.8894b3b3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.8894b3b3.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.8894b3b3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Icon.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
