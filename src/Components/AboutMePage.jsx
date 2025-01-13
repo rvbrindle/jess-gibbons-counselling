@@ -7,7 +7,7 @@ export default function AboutMePage({props}) {
             <div className='container text-white z-10 flex flex-col flex-grow'>
                 <h2 className='pt-12 pb-4 text-6xl text-center'>About Me</h2>
                 <h3 className='pb-8 text-xl text-center'>My Journey In Counselling Practice</h3>
-                <img className='w-10-rem h-10-rem rounded-full mx-auto border-2 border-tertiary' src='/src/assets/avatarPhoto.png'
+                <img className='w-10-rem h-10-rem rounded-full mx-auto border-2 border-tertiary' src='/avatarPhoto.png'
                      alt='avatar image'/>
                 <p className='py-4 pt-8'>
                     I am an integrative counsellor who is person-centred at my roots but can use other approaches such
