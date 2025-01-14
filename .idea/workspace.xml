@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2157837-f92e-4247-878f-753c5ae8f53b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.90ed2c64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.90ed2c64.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.90ed2c64.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MyServicesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MyServicesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.38ab6a44.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.38ab6a44.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.38ab6a44.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/avatarPhoto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

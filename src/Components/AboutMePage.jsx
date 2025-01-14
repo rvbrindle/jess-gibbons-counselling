@@ -7,7 +7,7 @@ export default function AboutMePage({props}) {
             <div className='container text-white z-10 flex flex-col flex-grow'>
                 <h2 className='pt-12 pb-4 text-6xl text-center'>About Me</h2>
                 <h3 className='pb-8 text-xl text-center'>My Journey In Counselling Practice</h3>
-                <img className='w-10-rem h-10-rem rounded-full mx-auto border-2 border-tertiary' src='./avatarPhoto.png'
+                <img className='w-14-rem h-14-rem rounded-full mx-auto border-2 border-tertiary' src='./avatarPhoto.png'
                      alt='avatar'/>
                 <p className='py-4 pt-8'>
                     I am an integrative counsellor who is person-centred at my roots but can use other approaches such
@@ -19,18 +19,23 @@ export default function AboutMePage({props}) {
                 </p>
                 <p className='py-4'>
                     I provide a safe, welcoming, and healing environment where clients can explore their concerns
-                    without fear of judgment or opinions. my style of counselling encourages you to lead the process,
+                    without fear of judgment or opinions. My style of counselling encourages you to lead the process,
                     going at a pace that is unique to you.
                 </p>
                 <p className='py-4'>
-
                     With a background in healthcare and lived experience with mental health challenges, I bring a deep
                     understanding and empathy to my work.
                 </p>
                 <p className='py-4'>
-                    I have supported clients facing a broad range of difficulties
-                    and have also volunteered as a counsellor with Home Start, a family support charity offering
+                    I have supported clients facing a broad range of difficulties such as anxiety, depression, low mood,
+                    process grief and bereavement, stress and relationship difficulties.
+                    Also I have volunteered as a counsellor with Home Start, a family support charity offering
                     practical and emotional assistance to parents who need support.
+                </p>
+                <p className='py-4'>
+                    Although I am trained to provide counselling for many different areas, I am passionate about
+                    counselling parents and mums especially, and have a special interest in perinatal mental health,
+                    having had a lived experience relating to this.
                 </p>
                 <p className='py-4'>
                     Understanding that life can be hectic, I offer flexible scheduling for sessions, including weekly or
@@ -38,7 +43,8 @@ export default function AboutMePage({props}) {
                     availability.
                 </p>
                 <p className='py-4'>
-                    As a registered member of the NCPS, I have completed
+                    As an accredited registered member of the NCPS, I am committed to continuous professional
+                    development. So far, I have completed training in the following areas:
                 </p>
                 <ul className='p-4 md:flex md:flex-row md:grid md:grid-cols-3 md:justify-evenly'>
                     <li className='flex flex-row w-full items-center gap-4 md:gap-4 py-4 text-center border-secondary border-b-2 md:border-0 rounded'>

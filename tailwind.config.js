@@ -26,8 +26,8 @@ export default {
         white: '#FFF0E5',
         black: '#000000FF',
         primary: '#AFBFAD',
-        secondary: '#788BFF',
-        tertiary: '#A288E3'
+        secondary: '#3eb7e5',
+        tertiary: '#d3d3e1'
       },
     },
   },
