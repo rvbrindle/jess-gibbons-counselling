@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jess-gibbons-counselling/static/css/main.f2bc2804.css",
-    "main.js": "/jess-gibbons-counselling/static/js/main.07e34020.js",
+    "main.css": "/jess-gibbons-counselling/static/css/main.b229d47a.css",
+    "main.js": "/jess-gibbons-counselling/static/js/main.7ee8b040.js",
     "index.html": "/jess-gibbons-counselling/index.html",
-    "main.f2bc2804.css.map": "/jess-gibbons-counselling/static/css/main.f2bc2804.css.map",
-    "main.07e34020.js.map": "/jess-gibbons-counselling/static/js/main.07e34020.js.map"
+    "main.b229d47a.css.map": "/jess-gibbons-counselling/static/css/main.b229d47a.css.map",
+    "main.7ee8b040.js.map": "/jess-gibbons-counselling/static/js/main.7ee8b040.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2bc2804.css",
-    "static/js/main.07e34020.js"
+    "static/css/main.b229d47a.css",
+    "static/js/main.7ee8b040.js"
   ]
 }
