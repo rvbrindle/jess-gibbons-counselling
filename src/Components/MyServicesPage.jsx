@@ -1,4 +1,5 @@
 import Card from "./Card.jsx";
+import Testimonial from "./Testimonial";
 
 export default function MyServicesPage() {
     return (
@@ -20,7 +21,7 @@ export default function MyServicesPage() {
                     <Card props={
                         {
                             title: '15 Minute Consultation',
-                            img: './card-image-1.png',
+                            img: `${process.env.PUBLIC_URL}/card-image-1.png`,
                             text: '15 minute initial telephone consultation to discuss suitability',
                             pricing: '£0.00'
                         }
@@ -28,7 +29,7 @@ export default function MyServicesPage() {
                     <Card props={
                         {
                             title: '1:1 Counselling Session',
-                            img: './card-image-2.png',
+                            img: `${process.env.PUBLIC_URL}/card-image-2.png`,
                             text: '50 minute face to face, online or telephone counselling session, tailored to your needs',
                             pricing: '£45.00 - £55.00'
                         }
@@ -36,12 +37,13 @@ export default function MyServicesPage() {
                     <Card props={
                         {
                             title: 'Concessions Available',
-                            img: './card-image-3.png',
+                            img: `${process.env.PUBLIC_URL}/card-image-3.png`,
                             text: 'Counselling sessions at a lower price for students, trainee counsellors and clients on a lower or no income.',
                             pricing: '£POA *limited spaces apply'
                         }
                     }/>
                 </div>
+                <Testimonial />
             </div>
         </div>
     )

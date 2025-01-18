@@ -25,9 +25,11 @@ export default {
       colors: {
         white: '#FFF0E5',
         black: '#000000FF',
-        primary: '#AFBFAD',
-        secondary: '#3eb7e5',
-        tertiary: '#d3d3e1'
+        primary: '#ADC0AD',
+        secondary: '#68675B',
+        tertiary: '#D48766',
+        lightPrimary: '#F1F8E5',
+        lightTertiary: '#FDA174',
       },
     },
   },

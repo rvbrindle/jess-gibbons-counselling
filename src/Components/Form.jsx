@@ -13,25 +13,32 @@ export default function Form({props}) {
 
     return (
         <>
-            <div className='flex flex-row items-center w-1/3 my-4 mt-8 md:w-1/4 grid-cols-2 gap-4 md:mx-auto'>
-                <Icon
-                    width='full md:w-1/6'
-                    icon='phone-call'
-                />
-                <p className='text-2xl w-4/6 md:w-1/2 hover:scale-105 transition-all ease-in-out'>
-                    <a href='tel:07719777620'>07719777620</a>
-                </p>
+            <div
+                className='flex flex-row w-full md:flex-row items-center align-middle content-center justify-evenly py-10 md:py-8 text-2xl'>
+                <a className='text-lg w-1/6 md:w-1/12 content-center items-center justify-center text-center cursor-pointer'
+                   href='tel:07719777620'>
+                    <Icon
+                        width='full'
+                        icon='call'
+                    />
+                </a>
 
-            </div>
-            <div className='flex flex-row items-center w-1/3 mb-8 md:w-1/4 grid-cols-2 gap-4 md:mx-auto'>
+                <a className='text-lg w-1/6 md:w-1/12 content-center items-center justify-center text-center cursor-pointer'
+                   href='https://www.instagram.com/jess_gibbons_counselling/'>
+                    <Icon
+                        width='full'
+                        icon='instagram'
+                    />
+                </a>
 
-            <Icon
-                width='full md:w-1/6'
-                icon='instagram'
-            />
-            <p className='text-2xl w-4/6 md:w-1/2 hover:scale-105 transition-all ease-in-out'>
-                <a href='instagram.com'>Instagram</a>
-            </p>
+                <a className='text-lg w-1/6 md:w-1/12 content-center items-center justify-center text-center cursor-pointer'
+                   href='https://www.facebook.com/people/Jess-Gibbons-Counselling-Services/61564433574320/'>
+                    <Icon
+                        width='full'
+                        icon='facebook'
+                    />
+                </a>
+
             </div>
 
             <form

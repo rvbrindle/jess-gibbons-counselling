@@ -90,15 +90,18 @@ export default function NavBar({items}) {
             </nav>
 
             {/* Mobile Nav */}
-            <nav className={`w-full flex justify-end ${setHeaderFixedOnScroll()} relative`}>
+            <div className='relative'>
+
+            <nav className={`w-full flex justify-end relative ${setHeaderFixedOnScroll()} text-lightPrimary`}>
                 <ul
                     onClick={() => toggleMenu()}
                     id='nav-menu-mobile'
-                    className='hidden md:hidden flex-col items-center w-3/4 bg-secondary z-50 my-1 py-4 fixed top-16 '
+                    className={`hidden md:hidden fixed top-20 flex-col items-center w-3/4 bg-secondary z-50`}
                 >
                     {navItems}
                 </ul>
             </nav>
+            </div>
         </>
     )
 }

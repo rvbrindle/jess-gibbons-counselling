@@ -7,8 +7,7 @@ export default function AboutMePage({props}) {
             <div className='container text-white z-10 flex flex-col flex-grow'>
                 <h2 className='pt-12 pb-4 text-6xl text-center'>About Me</h2>
                 <h3 className='pb-8 text-xl text-center'>My Journey In Counselling Practice</h3>
-                <img className='w-14-rem h-14-rem rounded-full mx-auto border-2 border-tertiary' src='./avatarPhoto.png'
-                     alt='avatar'/>
+                <img className='w-1/3 h-1/3 md:w-1/4 md:h-1/4 rounded-full mx-auto border-2 border-tertiary' src={`${process.env.PUBLIC_URL}/avatarPhoto.png`} alt='avatar'/>
                 <p className='py-4 pt-8'>
                     I am an integrative counsellor who is person-centred at my roots but can use other approaches such
                     as CBT and trauma techniques in my therapy.
@@ -47,49 +46,49 @@ export default function AboutMePage({props}) {
                     development. So far, I have completed training in the following areas:
                 </p>
                 <ul className='p-4 md:flex md:flex-row md:grid md:grid-cols-3 md:justify-evenly'>
-                    <li className='flex flex-row w-full items-center gap-4 md:gap-4 py-4 text-center border-secondary border-b-2 md:border-0 rounded'>
+                    <li className='flex flex-row w-full items-center gap-4 md:gap-4 py-2 text-center border-tertiary border-b-2 md:border-0 rounded'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='therapy'
                         />
                         <h3 className='text-left w-3/4'>Level 4 Diploma in Therapeutic Counselling</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 gap-4 border-secondary border-b-2 md:border-0 text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 gap-4 border-tertiary border-b-2 md:border-0 text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='certificate'
                         />
                         <h3 className='text-left  w-3/4'>Diploma in CBT skills</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 gap-4 border-secondary border-b-2 md:border-0  text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 gap-4 border-tertiary border-b-2 md:border-0  text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='phone-call'
                         />
                         <h3 className='text-left  w-3/4'>Training in Online and Telephone Counselling</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 gap-4 border-secondary border-b-2 md:border-0 text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 gap-4 border-tertiary border-b-2 md:border-0 text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='psychology'
                         />
                         <h3 className='text-left  w-3/4'>Three Phase Trauma Treatment Model</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 border-secondary border-b-2 md:border-0  gap-4 text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 border-tertiary border-b-2 md:border-0  gap-4 text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='guarantee'
                         />
                         <h3 className='text-left  w-3/4'>Oliver McGowan Trust Autism training</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 border-secondary border-b-2 md:border-0 gap-4 text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 border-tertiary border-b-2 md:border-0 gap-4 text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='adhd'
                         />
                         <h3 className='text-left  w-3/4'>Understanding ADHD</h3>
                     </li>
-                    <li className='flex flex-row justify-center items-center py-4 gap-4 md:border-0 text-center'>
+                    <li className='flex flex-row justify-center items-center py-2 gap-4 md:border-0 text-center'>
                         <Icon
                             width='1/3 p-6 md:w-1/4 md:p-0'
                             icon='supporting'
