@@ -41,8 +41,9 @@ export default function ContactPage() {
                         }
                 }}/>
             </div>
-            <div className='w-full p-4 mt-16 bg-white'>
-                <img className='mx-auto max-h-20' src={`${process.env.PUBLIC_URL}/ncps.png`}/>
+            <div className='w-full p-4 mt-16 bg-white text-center'>
+                <img className='mx-auto max-h-20 mb-4' src={`${process.env.PUBLIC_URL}/ncps.png`}/>
+                <a href='https://www.counselling-directory.org.uk/counsellors/jessica-gibbons'>Counselling Directory Profile</a>
             </div>
         </div>
     )

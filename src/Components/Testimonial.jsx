@@ -10,16 +10,11 @@ export default function Testimonial() {
     ];
 
     const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-    const [fade, setFade] = useState(true); // Tracks fading in and out
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setFade(false);
-            setTimeout(() => {
                 setCurrentTestimonialIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-                setFade(true);
-            }, 500);
-        }, 4000);
+        }, 10000);
 
         return () => clearInterval(interval); // Cleanup on unmount
     }, [testimonials.length]);
@@ -29,7 +24,7 @@ export default function Testimonial() {
             <h2 className='pt-12 pb-4 text-4xl text-center'>What People Say</h2>
 
             <div className='w-full rounded border-2 bg-primary border-secondary mb-20'>
-                <p className={`italic p-8 text-black ${fade ? 'fade-in' : 'fade-out'}`}>
+                <p className={`italic p-8 text-black`}>
                     "{testimonials[currentTestimonialIndex]}"
                 </p>
             </div>
