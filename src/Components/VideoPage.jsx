@@ -3,7 +3,7 @@ import Button from "./Button.jsx";
 export default function VideoPage() {
 
     return (
-        <div className='flex relative w-screen min-h-screen bg-white'>
+        <div className='flex relative w-screen min-h-screen bg-white' id='home'>
             <video preload={`${process.env.PUBLIC_URL}/bg-vid.mp4`} muted loop autoPlay={true}
                    className='object-cover w-screen opacity-20'>
                 <source src={`${process.env.PUBLIC_URL}/bg-vid.mp4`}/>
