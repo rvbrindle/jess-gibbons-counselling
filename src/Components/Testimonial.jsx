@@ -12,7 +12,7 @@ export default function Testimonial() {
     ];
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(
-        {delay: 7000}
+        {delay: 5000}
     )])
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function Testimonial() {
     const testimonials = testimonialLinks.map(testimonial => {
         return (
             <div className="embla__slide min-w-0 basis-full md:basis-8/12 flex-none mb-12 p-12">
-                <img className='w-full mx-auto md:w-3/4 rounded shadow-xl shadow-black border-2 border-tertiary' src={testimonial} alt='testimonial from customer'/>
+                <img className='w-full mx-auto md:w-1/2 rounded shadow-xl shadow-black border-2 border-tertiary' src={testimonial} alt='testimonial from customer'/>
             </div>
         )
     })
