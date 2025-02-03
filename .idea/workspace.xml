@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b2157837-f92e-4247-878f-753c5ae8f53b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9a849df8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9a849df8.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9a849df8.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +37,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/jg-prod&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/rvbrindle/Code/jess-gibbons-counselling/src/Components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -95,6 +91,13 @@
       <workItem from="1738617937307" duration="28000" />
       <workItem from="1738617981360" duration="104000" />
       <workItem from="1738618454646" duration="6000" />
+      <workItem from="1738618471956" duration="313000" />
+      <workItem from="1738619211291" duration="28000" />
+      <workItem from="1738619246668" duration="34000" />
+      <workItem from="1738619306859" duration="29000" />
+      <workItem from="1738619348120" duration="3000" />
+      <workItem from="1738619359604" duration="52000" />
+      <workItem from="1738619437217" duration="18000" />
     </task>
     <servers />
   </component>
