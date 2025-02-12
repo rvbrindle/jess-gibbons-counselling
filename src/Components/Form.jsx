@@ -1,14 +1,44 @@
 import Button from "./Button.jsx";
 import Icon from "./Icon.jsx";
+import {toast, ToastContainer} from "react-toastify";
+import {useState} from "react";
 
 export default function Form({props}) {
     const fields = props.fields;
 
-    // Helper function to handle input changes (if needed later)
-    const handleInputChange = (e, fieldName) => {
-        const value = e.target.value;
-        // Update value (you would typically use state management here)
-        console.log(`Field ${fieldName} updated with value: ${value}`);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        telephone: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+
+    };
+
+    const handleSubmit = async () => {
+        const formData = new FormData(document.querySelector('form'));
+        try {
+            const response = await fetch("https://api.sheetmonkey.io/form/fj2wr7QPhnxBhUKjfDEfjr", {
+                method: "POST",
+                body: formData,
+            });
+            if (response.ok) {
+                toast("Thanks! I will get back to you shortly");
+            } else {
+                toast("Failed! Please try again");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            toast("Failed! Please try again");
+        }
     };
 
     return (
@@ -42,32 +72,77 @@ export default function Form({props}) {
             </div>
 
             <form
-                className='w-full mx-auto p-16 bg-white mb-12 border-2 border-primary text-black flex flex-col md:my-3 gap-8 rounded'>
-                {Object.entries(fields).map(([name, field]) => (
-                    <div className='flex flex-col justify-between gap-4' key={name}>
-                        <label
-                            className='w-full'
-                            htmlFor={name}>{name.charAt(0).toUpperCase() + name.slice(1)}</label>
+                method="post"
+                className="mt-6 text-white py-4 w-11/12 md:w-3/4 text-xl text-center mx-auto flex-col bg-secondary rounded-lg border-2 border-white shadow-2xl"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmit();
+                }}
+            >
+                <ToastContainer
+                    position="bottom-center"
+                />
+                <div className="w-3/4 mx-auto form-group flex flex-col">
+                    <h2 className='py-4 text-4xl'>Contact Form</h2>
+                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
+                        <p className='text-sm md:text-lg w-1/4'>Name:</p>
                         <input
-                            id={name}
-                            type={field.input}
-                            name={name}
-                            value={field.value}
-                            required={field.required}
-                            onChange={(e) => handleInputChange(e, name)} // handle input changes
-                            placeholder={`Enter your ${name}`}
-                            className='p-2 border-l-4 border-secondary rounded'
+                            className="w-3/4 p-2 text-zinc-900 focus:outline-tertiary"
+                            name="name"
+                            type="text"
+                            value={formData.name}
+                            required={true}
+                            onChange={handleChange}
                         />
+                    </label>
 
-                    </div>
-                ))}
-                <Button props={{
-                    label: 'Send'
-                }}/>
-                <p className='text-center text-sm'>*All communication is strictly confidential and will not be
-                    shared
-                    with <strong>any</strong> 3rd party sources</p>
+                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
+                        <p className='text-sm md:text-lg w-1/4'>Email:</p>
+                        <input
+                            className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
+                            name="email"
+                            type="email"
+                            value={formData.email}
+                            required={true}
+                            onChange={handleChange}
+                        />
+                    </label>
 
+                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
+                        <p className='text-sm md:text-lg w-1/4'>Tel:</p>
+                        <input
+                            className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
+                            name="telephone"
+                            type="tel"
+                            value={formData.telephone}
+                            required={true}
+                            onChange={handleChange}
+                        />
+                    </label>
+
+                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
+                        <p className='text-sm md:text-lg w-1/4'>Message:</p>
+                        <input
+                            className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
+                            name="message"
+                            type="text"
+                            value={formData.message}
+                            required={true}
+                            onChange={handleChange}
+                        />
+                    </label>
+
+                    <p className='text-center text-xs'>*All communication is strictly confidential and will not be
+                        shared
+                        with <strong>any</strong> 3rd party sources
+                    </p>
+
+                    <input type="hidden" className='hidden' name="Created" value="x-sheetmonkey-current-date-time"/>
+                    <input
+                        type="submit"
+                        className='p-2 my-4 w-1/3 self-center cursor-pointer bg-tertiary hover:scale-110'
+                    />
+                </div>
             </form>
         </>
     )
