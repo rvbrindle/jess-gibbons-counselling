@@ -83,9 +83,11 @@ export default function Form({props}) {
                     position="bottom-center"
                 />
                 <div className="w-3/4 mx-auto form-group flex flex-col">
-                    <h2 className='py-4 text-4xl'>Contact Form</h2>
-                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
-                        <p className='text-sm md:text-lg w-1/4'>Name:</p>
+                    <h2 className='py-6 text-4xl'>Contact</h2>
+
+                    <label
+                        className="my-4 justify-evenly align-middle items-center flex flex-col md:flex-row">
+                        <p className='text-sm md:text-lg md:w-1/4 mb-4 md:mb-0'>Name:</p>
                         <input
                             className="w-3/4 p-2 text-zinc-900 focus:outline-tertiary"
                             name="name"
@@ -96,8 +98,9 @@ export default function Form({props}) {
                         />
                     </label>
 
-                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
-                        <p className='text-sm md:text-lg w-1/4'>Email:</p>
+                    <label
+                        className="my-4 justify-evenly align-middle items-center flex flex-col md:flex-row">
+                        <p className='text-sm md:text-lg md:w-1/4 mb-4 md:mb-0'>Email:</p>
                         <input
                             className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
                             name="email"
@@ -108,8 +111,9 @@ export default function Form({props}) {
                         />
                     </label>
 
-                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
-                        <p className='text-sm md:text-lg w-1/4'>Tel:</p>
+                    <label
+                        className="my-4 justify-evenly align-middle items-center flex flex-col md:flex-row">
+                        <p className='text-sm md:text-lg md:w-1/4 mb-4 md:mb-0'>Tel:</p>
                         <input
                             className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
                             name="telephone"
@@ -120,12 +124,13 @@ export default function Form({props}) {
                         />
                     </label>
 
-                    <label className="my-4 justify-evenly align-middle items-center flex flex-row">
-                        <p className='text-sm md:text-lg w-1/4'>Message:</p>
+                    <label
+                        className="my-4 justify-evenly align-middle items-center flex flex-col md:flex-row">
+                        <p className='text-sm md:text-lg md:w-1/4 mb-4 md:mb-0'>Message:</p>
                         <input
-                            className="w-3/4 p-2 text-zinc-900  focus:outline-tertiary"
+                            className="w-3/4 p-2 text-zinc-900 focus:outline-tertiary"
                             name="message"
-                            type="text"
+                            type="textarea"
                             value={formData.message}
                             required={true}
                             onChange={handleChange}
