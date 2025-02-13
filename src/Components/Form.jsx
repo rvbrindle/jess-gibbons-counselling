@@ -130,7 +130,7 @@ export default function Form({props}) {
                         <input
                             className="w-3/4 p-2 text-zinc-900 focus:outline-tertiary"
                             name="message"
-                            type="textarea"
+                            type="text"
                             value={formData.message}
                             required={true}
                             onChange={handleChange}
